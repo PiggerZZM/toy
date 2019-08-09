@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Queue.h"
+#include "toy.h"
 
 // 循环队列
 
@@ -14,7 +15,7 @@ private:
     T *elements;     //  队列数组
     int maxSize;     // 队列最大容量
 public:
-    SeqQueue(int sz = 10);
+    SeqQueue(int sz = maxSize);
     ~SeqQueue()
     {
         delete[] elements;

@@ -1,7 +1,6 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 
-const int maxSize = 50;
 template<class T>
 class Queue
 {

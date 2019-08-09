@@ -4,8 +4,8 @@
 // 顺序栈
 #include <iostream>
 #include "Stack.h"
+#include "toy.h"
 using namespace std;
-const int stackIncrement = 20;
 template <class T>
 class SeqStack : public Stack<T>
 {
@@ -15,7 +15,7 @@ private:
     int maxSize;            // 最大容纳个数
     void overflowProcess(); //  溢出处理
 public:
-    SeqStack(int sz = 50);
+    SeqStack(int sz = maxSize);
     ~SeqStack() { delete[] elements; }
     void Push(const T x);
     bool Pop(T &x);
